@@ -16,7 +16,7 @@ QueueHandle_t dataQueue;
 
 //Receive data
 void OnDataRecv(const esp_now_recv_info_t *info, const uint8_t *data, int len) { //runs when packet arives
-  if (len == BATCH_SIZE * NUM_CHANNELS * sizeof(uint16_t)){
+  if (len == BATCH_SIZE * NUM_CHANNELS * sizeof(uint16_t)) {
     xQueueSend(dataQueue, data, 0); //copy packet into dataQueue
   }  
 }
