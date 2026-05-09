@@ -32,7 +32,7 @@ def serial_reader():
             if time.perf_counter() - startTime > 1.0: 
                 print ("No response, retrying")
                 break
-        
+
         raw = ser.read(EXPECTED_BYTES)
         elapsed = time.perf_counter() - startTime
 
@@ -43,9 +43,8 @@ def serial_reader():
             ser.reset_input_buffer()
 
             totalRuns +=1
-        
+
         time.sleep(0.05)
-    
 
     print(f"Mean time: {1000*sum(times)/TOTAL_SAMPLES} ms")
     print(f"Min time: {1000*min(times)} ms")
