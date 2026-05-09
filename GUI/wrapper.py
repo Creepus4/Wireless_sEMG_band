@@ -3,8 +3,8 @@ import numpy as np
 
 
 # Importing DLL files
-fileReader = ctypes.CDLL(r"C:\Users\daria\OneDrive\Dokument\Kandidatarbete\Python\fileReader.dll")
-waveletTransform = ctypes.CDLL(r"C:\Users\daria\OneDrive\Dokument\Kandidatarbete\Python\waveletTransform.dll")
+fileReader = ctypes.CDLL(r"file\path\fileReader.dll")
+waveletTransform = ctypes.CDLL(r"file\path\waveletTransform.dll")
 
 #setup wavelet functions
 
