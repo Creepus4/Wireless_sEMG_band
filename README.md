@@ -1,2 +1,7 @@
 # Wireless sEMG band
-The source code for the wireless EMG band made during a bachelor's thesis.
+
+This GitHub repository provides the code used to connect to, plot, and identify movements for the armband developed during a bachelor's thesis. It includes the ESP32 code used for wireless transmission and sampling, as well as 64-bit x86-targeted code for signal processing, plotting, and movement classification.
+
+# Usage
+
+
