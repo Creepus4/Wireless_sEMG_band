@@ -18,4 +18,6 @@ For the computer side, use the code in the GUI folder. The config.py file contai
 
 The GUI folder also contains precompiled DLL files. However, if you want to compile them yourself, the C++ source code can be found in the dllSourceCode folder.
 
+# -- add about the main application--
+
 The Esp32Test folder contains the test code used on the ESP32 devices during the bachelor's thesis to evaluate packet loss, latency, and the maximum EMG signal amplitude.
