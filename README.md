@@ -6,4 +6,12 @@ This GitHub repository provides the code used to connect to, plot, and identify 
 
 # Usage
 
+To use this code, you need two ESP32 devices with wireless communication capabilities and a Windows computer running Windows 10 or later (other microcontrollers, operating systems, or versions may work, but they have not been tested).
+
+Compile the C++ code in the ESP32Code folder for the ESP32 devices, and upload the receiver code to the ESP32 connected via USB to the Windows computer. The transmitter code should be uploaded to the ESP32 connected to a low-pass filtered EMG signal.
+
+The sample rate, number of EMG channels, and ESP-NOW packet size can be changed through the macros at the top of the transmitter.cpp file.
+
+This should allow the EMG signal to be sampled and transmitted to the computer, where it can be read by the operating system.
+
 
