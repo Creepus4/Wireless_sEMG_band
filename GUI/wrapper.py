@@ -1,13 +1,14 @@
 import ctypes
 import numpy as np
+import os
 
+_base = os.path.dirname(os.path.abspath(__file__))
 
 # Importing DLL files
-fileReader = ctypes.CDLL(r"file\path\fileReader.dll")
-waveletTransform = ctypes.CDLL(r"file\path\waveletTransform.dll")
+fileReader = ctypes.CDLL(os.path.join(_base, 'fileReader.dll'))
+waveletTransform = ctypes.CDLL(os.path.join(_base, 'waveletTransform.dll'))
 
 #setup wavelet functions
-
 waveletTransform.createWaveletObjArray.argtypes = [ctypes.POINTER(ctypes.c_float), ctypes.c_uint32, ctypes.c_uint32, ctypes.c_uint32]
 waveletTransform.createWaveletObjArray.restype = None
 
