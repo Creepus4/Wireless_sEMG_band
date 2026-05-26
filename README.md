@@ -14,10 +14,10 @@ The sample rate, number of EMG channels, and ESP-NOW packet size can be changed 
 
 This should allow the EMG signal to be sampled and transmitted to the computer, where it can be read by the operating system.
 
-For the computer side, use the code in the GUI folder. The config.py file contains all configurable parameters used to customize the plot. The wrapper.py file acts as an interface between the DLL files and Python by providing Python functions. You need to specify the file paths to the two DLL files in order for the program to work.
+For the computer side, use the code in the GUI folder. The config.py file contains all configurable parameters used to customize the plot. The wrapper.py file acts as an interface between the DLL files and Python by providing Python functions. You need to put the two DLL files in the same folder as the main GUI aplications in order for the program to work.
 
 The GUI folder also contains precompiled DLL files. However, if you want to compile them yourself, the C++ source code can be found in the dllSourceCode folder.
 
-# -- add about the main application--
+The main application consist of the real_time_plot_final.py file. 
 
 The Esp32Test folder contains the test code used on the ESP32 devices during the bachelor's thesis to evaluate packet loss, latency, and the maximum EMG signal amplitude.
