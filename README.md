@@ -18,6 +18,6 @@ For the computer side, use the code in the GUI folder. The config.py file contai
 
 The GUI folder also contains precompiled DLL files. However, if you want to compile them yourself, the C++ source code can be found in the dllSourceCode folder.
 
-The main application consist of the real_time_plot_final.py file. 
+To start using the GUI, take everything in the GUI folder and download it, or place all of the files in the same folder so that it works properly. To use the movement classification, first record the EMG signal data for wrist extension, wrist flexion, and rest using Record_data.m. The file LDA_process_recorded_data_final.py can then be used to create the .json file containing the LDA model. These files can then be placed in the same folder as the main application file, real_time_plot_final.py. This file can then be run to display the real-time data, signal processing, and movement.
 
 The Esp32Test folder contains the test code used on the ESP32 devices during the bachelor's thesis to evaluate packet loss, latency, and the maximum EMG signal amplitude.
