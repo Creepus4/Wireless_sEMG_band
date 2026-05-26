@@ -105,10 +105,10 @@ if __name__ == '__main__':
     
     
     try:
-        with open(r'Z:/Åk3/Kandidatarbete/Python/Recorded data/LDA_flexion_data.json', 'r') as f: #get processed flexion data
+        with open(os.path.join(base_path,'LDA_flexion_data.json'), 'r') as f: #get processed flexion data
             flexion_data = json.load(f)
             
-        with open(r'Z:/Åk3/Kandidatarbete/Python/Recorded data/LDA_extension_data.json', 'r') as f: #get processed extension data
+        with open(os.path.join(base_path,'LDA_extension_data.json'), 'r') as f: #get processed extension data
             extension_data = json.load(f)        
         
         X, Y = training_data(flexion_data, extension_data)
